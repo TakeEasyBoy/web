@@ -1,0 +1,27 @@
+.show_movie {width:1000px;height:360px;position:relative;margin:0px 0px 15px;background:#FFFFFF;background:-moz-linear-gradient(top,#FFFFFF 0,#E3E3E3 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#FFFFFF),color-stop(100%,#E3E3E3));filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF',endColorstr='#E3E3E3',GradientType=0 )}
+.show_movie .show_movie_con {padding:10px 0 0 31px}
+.show_movie .show_movie_con .movie_pic {float:left;width:184px;height:303px;position:relative;z-index:3}
+.show_movie .show_movie_con .movie_pic img {margin-left:8px}
+.show_movie .show_movie_con:hover .movie_pic {opacity:0.6}
+.show_movie .show_movie_con .movie_pic:hover {opacity:1;-moz-box-shadow:0 0 15px #C8C8C8;-webkit-box-shadow:0 0 15px #C8C8C8;box-shadow:0 0 15px #C8C8C8;-webkit-transform:scale(1.05);-moz-transform:scale(1.05);background:#FFFFFF;background:none\9;height:293px;-moz-border-radius:5px;-webkit-border-radius:5px;padding-top:9px;*padding-top:0;border-radius:5px;margin-top:-15px;*margin-top:0}
+.show_movie .show_movie_con .movie_pic:hover .star_bg {top:227px;top:205px\9}
+.show_movie .show_movie_con .item_intro {padding:0 8px;text-align:center}
+.show_movie .movie_pic .item_name {	padding-top:8px;text-align:center}
+.show_movie .movie_pic .item_name a {font-weight:bold}
+.show_movie .show_page button {width:15px;height:31px;font-size:0;content:"";line-height:100px;overflow:hidden;cursor:pointer;border:none;background:url(../images/bg_index.png) no-repeat -581px -36px;position:absolute;	top:150px}
+.show_movie .show_page .btn_prev {left:10px}
+.show_movie .show_page .btn_next {right:10px;background-position:-598px -36px}
+.show_movie .show_tag {height:36px;width:211px;height:39px;background:url(../images/bg_index.png) no-repeat 0 -292px;position:absolute;left:385px;top:302px;z-index:1}
+.show_movie .show_tag button {width:104px;height:34px;font-size:0;float:left;content:"";line-height:200px;overflow:hidden;cursor:pointer;border:none;background:url(../images/bg_index.png) no-repeat 0 -332px}
+.show_movie .show_tag .btn_hot {background:none;position:absolute;left:2px;top:2px;z-index:1}
+.show_movie .show_tag .btn_hot_sel {background-position:0 -332px;position:absolute;left:2px;top:2px;z-index:2}
+.show_movie .show_tag .btn_zuijin {background:none;position:absolute;left:106px;top:2px;z-index:1}
+.show_movie .show_tag .btn_zuijin_sel {background-position:-103px -332px;position:absolute;left:105px;top:2px;z-index:1}
+.show_movie .bg {position:absolute;left:0;width:230px;height:199px;display:block;background:url(../images/index_bar.png);*background:url(../images/index_bar.png);_background:url(../images/index_bar_ie.png) no-repeat}
+.show_movie .show_movie_con .star_bg {position:absolute;top:205px;left:8px;	width:167px;height:29px;overflow:hidden;display:block}
+.show_movie .show_movie_con .movie_pic:hover .star_bg {top:214px;top:205px\9}
+.show_movie .show_movie_con .star_5 .bg {position:absolute;top:0;left:0}
+.show_movie .show_movie_con .star_4 .bg {position:absolute;top:-31px;left:0}
+.show_movie .show_movie_con .star_3 .bg {position:absolute;top:-62px;left:0}
+.show_movie .show_movie_con .star_2 .bg {position:absolute;top:-93px;left:0}
+.show_movie .show_movie_con .star_1 .bg {position:absolute;top:-124px;left:0}	

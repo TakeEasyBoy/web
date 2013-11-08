@@ -1,0 +1,107 @@
+@charset "gb2312";
+/* style comment css */
+*{padding:0px;margin:0px;}
+body{font:12px Verdana,Arial,Tahoma;background:#FFF;}
+a{color:#1B1B1B;text-decoration:none;}
+a:hover{color:#F90;text-decoration:none;}
+ul{list-style:none;}
+img{border:none;}
+input,select,button{font:12px Verdana,Arial,Tahoma;vertical-align:middle;}
+
+/* var class*/
+.l{float:left;}
+.r{float:right;}
+.c{clear:both;}
+	
+ /* pagebody box */
+ #pagebody{width:1000px; min-height:1300px;margin:0px auto;}
+ 
+    /* site header infomation box css */
+    #header{ width:1000px;height:168px;overflow:hidden;}	
+       
+	   /* tools box css */
+	   .tools{ height:36px;width:1000px;overflow:hidden;background:#FFF url(../images/common_index.png) no-repeat;}
+	   .tools ul{ float:left; margin-left:20px;color:#616104;}
+	   .tools ul li{ float:left; line-height:36px;}
+	   .tools ul li a{ color:#616104;}
+	   
+	   /* site logo css box */	   
+	   .sitelogo{width:1000px; height:67px;overflow:hidden;}
+	       .sitelogo .logo{ width:296px; height:67px;}
+		   .sitelogo .bannar{ width:704px;height:67px;}   
+	   
+	   /* nav box css */
+	   .nav{width:1000px;height:66px;overflow:hidden;background:url(../images/common_index.png) 0px -36px no-repeat;}
+		   /* nav list box css  */
+		   .nav .list{width:635px;height:46px;float:left;display:inline;margin-left:20px;overflow:hidden;}
+		   .nav .list ul{text-align:left;display:block;}
+		   .nav .list ul li{float:left;margin-left:5px;list-style:none;}		
+		   .nav .list a{width:140px;height:46px;display:block;margin-left:0px;}
+		   .nav .list a span{ visibility:hidden;}   
+		   .nav .list .m1 a{ background:url(../images/common_index.png) 0px -103px no-repeat;}
+		   .nav .list .m2 a{ background:url(../images/common_index.png) 0px -149px no-repeat;}
+		   .nav .list .m3 a{ background:url(../images/common_index.png) 0px -195px no-repeat;}
+		   .nav .list .m4 a{ background:url(../images/common_index.png) 0px -241px no-repeat;width:190px;}
+		   .nav .list .m1 a:hover{ background-position:-140px -103px;}
+		   .nav .list .m2 a:hover{ background-position:-140px -149px;}
+		   .nav .list .m3 a:hover{ background-position:-140px -195px;}
+		   .nav .list .m4 a:hover{ background-position:-190px -241px;width:190px;}
+		   .nav .list .mo1 a{ background:url(../images/common_index.png) -140px -103px; }
+		   .nav .list .mo2 a{ background:url(../images/common_index.png) -140px -149px no-repeat;}
+		   .nav .list .mo3 a{ background:url(../images/common_index.png) -140px -195px no-repeat;}
+		   .nav .list .mo4 a{ background:url(../images/common_index.png) -190px -241px no-repeat;width:190px;} 
+		    /* site search box css  */
+		   .nav .search{width:235px;height:46px;float:left;text-align:left; margin-left:60px;overflow:hidden; background:url(../images/common_index.png) -280px -103px no-repeat;}
+		   .nav .search #keyword{height:23px;line-height:23px;width:168px;color:#616104;font-size:14px;margin-top:11px;margin-left:63px;background:repeat-x url(../images/t.jpg);border:0px;}
+		   /* search submit box css */
+		   .nav .submit{width:30px;height:46px;float:left;text-align:left;overflow:hidden;}
+		   .nav .submit a{display:block;float:right;width:30px;height:46px; background:url(../images/common_index.png) -513px -103px;}
+		   
+		   
+	/* index main box css */ 
+	#main{ min-height:1000px; width:1000px; color:#1B1B1B;}
+	   #main a{color:#1B1B1B;text-decoration:none;} 
+	   #main a:hover{color:#F90;text-decoration:none;}
+	   
+	   
+	   .selectmovie{width:1000px;text-align:left;}	   	   
+	   	   /* cinema box css  */
+		   .selectmovie .cinema{ width:405px; overflow:hidden;}
+			   .selectmovie .cinema h2{width:405px; height:68px;overflow:hidden;background:url(../images/common_index.png) -280px -149px no-repeat;}
+			   .selectmovie .cinema h2 span{ display:none;}
+			   .selectmovie .cinema .list{ width:385px;border-right:solid 1px #DEDEDE; border-left:solid 1px #DEDEDE; margin-left:2px; background-color:#FFF;}
+			   .selectmovie .cinema .list ul{ width:370px; margin-left:8px;}
+			   .selectmovie .cinema .list ul li{ padding-top:8px; border-bottom:dotted 1px #CCC;}
+			   .selectmovie .cinema .list ul li h3{ float:left;width:290px;min-height:36px;font-size:14px;color:#646464;line-height:36px;}
+			   .selectmovie .cinema .list ul li a{ float:right;width:75px; height:32px;display:block; background:url(../images/common_index.png) -545px -103px no-repeat;}
+			   .selectmovie .cinema .list ul li p{ clear:both; color:#8D8D8D; line-height:25px;}
+			   .selectmovie .cinema .bnt{margin-left:2px;width:390px; height:15px;background:url(../images/common_index.png) -281px -218px no-repeat;}
+		   
+		   /* new hot movie box css  */
+		   .selectmovie .movie{width:595px;}
+		   		.selectmovie .movie .picture{ float:left;width:396px; overflow:hidden;}
+				.selectmovie .movie .picture .pic{width:396px;height:318px;overflow:hidden; text-align:left; background:url(../images/common_index.png) -604px -183px no-repeat;}
+				.selectmovie .movie .picture .pic img{ width:384px; height:302px; overflow:hidden;}
+				.selectmovie .movie .picture .info{width:396px; height:80px;overflow:hidden;padding:10px; background:url(../images/common_index.png) -0px -334px no-repeat;}
+				.selectmovie .movie .picture .info a{ color:#660;}
+				.selectmovie .movie .picture .info p{ line-height:25px;}
+				
+				/* price info box css */
+				.selectmovie .movie .price{ float:right;width:199px; height:100px; min-height:380px;overflow:hidden; background:#EEECEC;}
+				.selectmovie .movie .price .pri{ height:68px; color:#FFF;width:100%;background:url(../images/price.png) repeat-x;margin-top:9px;font-size:30px;line-height:60px;padding-left:40px;}
+				.selectmovie .movie .price .prilist{ margin:5px 0px 0px 10px; width:199px; height:60px; }
+		   		.selectmovie .movie .price .prilist li{ float:left; width:60px; line-height:27px; color:#6B6B6B;}
+				.selectmovie .movie .price .prilist li span{ display:inline-block;font-size:16px; font-weight:bold; color:#666600;}
+				.selectmovie .movie .price .prilist li span.vip{ color:#FF6000;}
+				.selectmovie .movie .price #choose{ clear:both; width:134px; height:44px; display:block; margin:8px 0px 0px 25px;background:url(../images/common_index.png) -620px -103px no-repeat;}
+		   		.selectmovie .movie .price .help{ width:100%; margin-top:10px;}
+				.selectmovie .movie .price .help h3{ height:28px; width:100%; background-color:#E1E0E0; font-size:12px; font-weight:100; line-height:28px; border-bottom:solid 1px #999;}
+		   		.selectmovie .movie .price .help ul{ padding:5px;}
+				.selectmovie .movie .price .help ul li{ display:block; line-height:27px;}
+		   
+		   
+		   
+		
+	/* footer box css */
+	.footer{ clear:both; width:980px; height:159px;margin-top:8px;}
+	  .footer p{ height:26px; width:1024px; line-height:22px; font-size:13px;color:#646464; }

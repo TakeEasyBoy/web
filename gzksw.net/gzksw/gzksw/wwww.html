@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>我的首页</title>
+    <style type="text/css" >
+	/* style comment css */
+	*{padding:0px;margin:0px; background-color:#F3F2F3;}
+	body{color:#333;font-family:font-family: Arial, Verdana, Helvetica, sans-seriffont-size:12px; margin:0 auto; padding:0;}
+	a{color:#333;text-decoration:none;}
+	a:hover{color:#FF8000;text-decoration:none;}
+	ul{list-style:none;}img{border:none;}
+	input,select,button{font:12px Verdana,Arial,Tahoma;vertical-align:middle;}
+	div, form, p, i, img, ul, li, ol, dl, dt, dd, table, tr, td, th, fieldset, label, legend, select, button, input {margin:0; padding:0;}
+	ul, ol, li, dl, dt, dd {list-style:none;}
+	table, td, tr, th { font-size:12px }
+	input, select { vertical-align: middle; }
+	table { margin:0 auto }
+	img { border:none }
+	em { color:#999; font-family: Tahoma, Verdana, helvetica; font-size: 10px; font-style: normal; white-space: nowrap; }
+    #homebody{ margin:10px;text-align: left; font-size:12px; }
+    
+	
+	
+	#homebody .search{ width:100%; height:137px; overflow:hidden; background:#CCC url(s_bg.gif) repeat-x;}
+	#homebody .search .from{ width:980px;height:50px; margin:0 auto; margin-top:30px; background-color:#9C6;}
+	#homebody .search .from .keyword{ width:372px; height:50px;overflow:hidden; line-height:50px; padding-left:44px; border:none; background:#FFF url(s_in.gif) no-repeat;}
+	#homebody .search .from a{ display:inline-block;width:130px; height:50px;background:#0072C6; text-align:center; line-height:50px; color:#FFF; font-size:12px;}
+	
+	
+	#homebody .uinfo{ width:100%;  height:240px; margin-top:10px; border:solid 1px #DEDEDE;}
+	#homebody .uinfo .far{width:980px;}
+	#homebody .uinfo .far p{ float:left; width:260px; height:22px; line-height:22px; padding:8px;}
+	#homebody .uinfo .far .op{ float:right; font-weight:bold; margin:10px 0px 10px 10px;}
+	#homebody .uinfo .far .op a{ display:inline-block; width:80px; height:28px; line-height:28px; text-align:center; background-color:#E3e3e3; border:solid 1px #999999;}
+	
+	
+	#homebody .pic{ width:100%;}
+	#homebody .pic .box{ float:left;width:270px; height:400px; overflow:hidden; margin:10px 0px 0px 10px; border:solid 1px #DEDEDE;}
+	#homebody .pic .box p{ text-align:center; padding-top:10px;}
+	#homebody .pic .box .info{ width:270px; height:79px; margin-top:10px; text-align:left; line-height:30px; background-color:#F2F4F6; border-top:solid 1px #DEDEDE;}
+	#homebody .pic .box .info a{display:inline-block; width:100px; height:20px; line-height:20px; text-align:center; background-color:#E3e3e3; border:solid 1px #999999;}
+</style>
+</head>
+<body>
+	<div id="homebody">
+    
+    
+    	<div class="search">
+        	<div class="from">
+            	<form name="search" id="search" action="{:Helper::createLink('customer/read/search')}" method="post">
+                	<input id="keyword" name="keyword" class="keyword" type="text"  identi="输入户名、账号" value="" /><a id="submit" href="javascript:submit();"  class="hover" title="检索">检索</a>
+                </form>
+            </div>
+        </div>
+        
+        <div class="uinfo">
+        	<div class="far">
+                <p><span>账号：</span>622251965145155666145</p>
+                <p><span>户名：</span>吴国文</p>
+                <p><span>客户号：</span>吴国文</p>
+                <p><span>账户类型：</span>一般户</p>
+                <p><span>账户状态：</span>吴国文</p>
+                <p><span>开户时间：</span>2012-4-02</p>
+                <p><span>账户属性：</span>贵州</p>
+                <p><span>法人名称：</span>吴国文</p>
+                <p><span>法人身体证号：</span>522426198808177112</p>
+                <p><span>注册地址：</span>贵阳市南明区</p>
+                <p><span>联系地址：</span>贵阳市云岩区北京路66号</p>
+                <p><span>联系电话：</span>18985579796</p>
+                <p><span>经办人姓名：</span>吴国文</p>
+                <p><span>经办人身体证号：</span>522426198808177112</p>
+                <p><span>账户名：</span>吴国文</p>
+                <p><span>归属部门：</span>贵阳支行-信息部</p>
+                <p><span>归属客户经理：</span>吴国文</p>
+                
+                <div class="op">
+                    <a href="#">整改</a>
+                    <a href="#">备注</a>
+                    <a href="#">编辑</a>
+            	</div>
+            </div>
+            
+        </div>
+        
+        <div class="pic">
+            <div class="box">
+                <p><img src="s_bg.gif" width="250px" height="290px" /><input name="path[]" type="hidden" value="{$vo.filename}" /></p>
+                <div class="info">
+                    &nbsp;&nbsp;证件名：法人身份证<br />&nbsp;&nbsp;有效期：2015-10-25<br />
+                    &nbsp;&nbsp;<a href="#" >删除</a>&nbsp;&nbsp;<a href="#" >替换</a>
+                </div>
+             </div>
+             <div class="box">
+                <p><img src="s_bg.gif" width="250px" height="290px" /><input name="path[]" type="hidden" value="{$vo.filename}" /></p>
+                <div class="info">
+                    &nbsp;&nbsp;证件名：法人身份证<br />&nbsp;&nbsp;有效期：2015-10-25<br />
+                    &nbsp;&nbsp;<a href="#" >删除</a>&nbsp;&nbsp;<a href="#" >替换</a>
+                </div>
+             </div>
+             <div class="box">
+                <p><img src="s_bg.gif" width="250px" height="290px" /><input name="path[]" type="hidden" value="{$vo.filename}" /></p>
+                <div class="info">
+                    &nbsp;&nbsp;证件名：法人身份证<br />&nbsp;&nbsp;有效期：2015-10-25<br />
+                    &nbsp;&nbsp;<a href="#" >删除</a>&nbsp;&nbsp;<a href="#" >替换</a>
+                </div>
+             </div>
+        </div>
+        
+        
+        
+    </div>
+</body>
+</html>
